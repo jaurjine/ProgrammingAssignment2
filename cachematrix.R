@@ -22,7 +22,8 @@ list(set = set, get = get,
 
 ## cacheSolve takes the list created by makeCacheMatrix as input and determines 
 ## if the inverse has already been calculated (ie if m is not null). If so, it prints  
-## the cache. If not, it uses the solve() function to calculate the inverse.
+## the cache. If not, it uses the solve() function to calculate the inverse and sets the cache to be the result 
+## of this computation.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
