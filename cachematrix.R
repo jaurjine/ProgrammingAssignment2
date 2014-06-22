@@ -7,7 +7,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL ## m is created in the environment of this function.
-  set <- function(y) ## set allows the matrix to be explicitly stated by the user using makeCacheMatrix$set(matrix). 
+  set <- function(y){## set allows the matrix to be explicitly stated by the user using makeCacheMatrix$set(matrix). 
     x <<- y          
   m <<- NULL  ##   When the matrix value is set, the cache is automatically nulled in the global environment.
 }
